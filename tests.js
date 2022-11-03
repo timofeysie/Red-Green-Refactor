@@ -1,8 +1,18 @@
 Test("First test", () => {
-  const result = fizzbuzz(3);
-  if (result === 'fizz') {
-    pass(`The result is ${result.toString()}`);
+  const result = exampleFunction();
+  if (result.length === 100) {
+    pass(`The test passes`);
   } else {
-    fail(`The result is ${result.toString()}`);
+    fail(`The test fails`);
+  }
+});
+
+Test("First test", () => {
+  const result = exampleFunction();
+  console.log("result", result);
+  if (result[3] === 'fizz') {
+    pass(`The test passes`);
+  } else {
+    fail(`The test fails`);
   }
 });
