@@ -9,16 +9,17 @@ Test("First test", () => {
 
 Test("second test", () => {
   const result = exampleFunction();
-  if (result[3] === 'fizz') {
+  if (result[2] === 'fizz') {
     pass(`The test passes`);
   } else {
     fail(`The test fails`);
   }
 });
 
-Test("third test", () => {
+
+Test("Third test", () => {
   const result = exampleFunction();
-  if (result[0] === 0) {
+  if (result[4] === 'buzz') {
     pass(`The test passes`);
   } else {
     fail(`The test fails`);
@@ -27,12 +28,17 @@ Test("third test", () => {
 
 Test("fourth test", () => {
   const result = exampleFunction();
-  console.log('result', result);
-  const test_number = 5;
-  const boo = test_number % 3;
-  console.log("boo", boo);
-  console.log("result[3] % 3", result[3]);
-  if (boo === 0) {
+  if (result[5] === 'fizz') {
+    pass(`The test passes`);
+  } else {
+    fail(`The test fails`);
+  }
+});
+
+Test("fifth test", () => {
+  const result = exampleFunction();
+  console.log(result)
+  if (result[14] === 'fizzbuzz') {
     pass(`The test passes`);
   } else {
     fail(`The test fails`);
