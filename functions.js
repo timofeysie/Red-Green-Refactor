@@ -7,5 +7,9 @@ const exampleFunction = () => {
 };
 
 const fizzbuzz = (input) => {
-  return input;
+  if (input === 3) {
+    return "fizz"
+  } else {
+    return input
+  }
 }
